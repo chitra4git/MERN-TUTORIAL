@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: false}))
 
 //direct the '/' to api/goal page
 app.use('/api/goals',require('./routes/goalRoutes')) 
+app.use('/api/users',require('./routes/userRoutes')) 
 
 app.use(errorHandler)
 
